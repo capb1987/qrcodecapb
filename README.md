@@ -18,6 +18,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
+ git push --set-upstream origin master
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://qrcodecapb.netlify.app/)
