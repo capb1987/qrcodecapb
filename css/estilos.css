@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --whiteColor: hsl(0, 0%, 100%);
+  --lightGrayColor: hsl(212, 45%, 89%);
+  --grayishBlueColor: hsl(220, 15%, 55%);
+  --darkBlueColor: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--lightGrayColor);
+}
+
+.wrapContainer {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr);
+  grid-template-rows: minmax(250px, 1fr) 100px;
+  grid-template-areas:
+    "containerQrCode"
+    "attribution";
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapContainer {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-areas:
+      "containerQrCode containerQrCode containerQrCode"
+      "attribution attribution attribution";
+  }
+}
+
+.containerQrCode {
+  grid-area: containerQrCode;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*QR CARD*/
+
+.qrCodeCard {
+  box-shadow: 0 4px 8px 0 var(--darkBlueColor);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--whiteColor);
+  max-width: 330px;
+  width: 100%;
+  min-width: 200px;
+}
+
+.qrCodeCard__image {
+  display: flex;
+  justify-content: center;
+}
+
+.qrCodeCard__image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .qrCodeCard__image img {
+    max-width: 300px;
+  }
+}
+
+.qrCodeCard__text {
+  text-align: center;
+}
+
+.qrCodeCard__text h3 {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.qrCodeCard__text p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--grayishBlueColor);
+}
+
+/*ATTRIBUTION*/
+
+.attribution {
+  grid-area: attribution;
+  background-color: var(--darkBlueColor);
+  color: var(--whiteColor);
+  padding: 1rem;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.attribution > a {
+  color: var(--lightGrayColor);
+  text-decoration: none;
+}
