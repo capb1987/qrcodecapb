@@ -16,7 +16,7 @@ body {
   background-color: var(--lightGrayColor);
 }
 
-.wrapContainer {
+.wrap-container {
   display: grid;
   grid-template-columns: minmax(200px, 1fr);
   grid-template-rows: minmax(250px, 1fr) 100px;
@@ -27,7 +27,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .wrapContainer {
+  .wrap-container {
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-template-areas:
       "containerQrCode containerQrCode containerQrCode"
@@ -35,7 +35,7 @@ body {
   }
 }
 
-.containerQrCode {
+.container-qr-code {
   grid-area: containerQrCode;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ body {
 
 /*QR CARD*/
 
-.qrCodeCard {
+.qr-code-card {
   box-shadow: 0 4px 8px 0 var(--darkBlueColor);
   padding: 30px;
   margin: 10px;
@@ -55,40 +55,40 @@ body {
   min-width: 200px;
 }
 
-.qrCodeCard__image {
+.qr-code-card__image {
   display: flex;
   justify-content: center;
 }
 
-.qrCodeCard__image img {
+.qr-code-card__image img {
   width: 100%;
   max-width: 300px;
   border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .qrCodeCard__image img {
+  .qr-code-card__image img {
     max-width: 300px;
   }
 }
 
-.qrCodeCard__text {
+.qr-code-card__text {
   text-align: center;
 }
 
-.qrCodeCard__text h3 {
+.qr-code-card__text h1 {
   padding: 10px;
   font-weight: 700;
   font-size: 22px;
 }
 
-.qrCodeCard__text p {
+.qr-code-card__text p {
   font-weight: 400;
   font-size: 15px;
   color: var(--grayishBlueColor);
 }
 
-/*ATTRIBUTION*/
+/*ATTRIBUTION - FOOTER*/
 
 .attribution {
   grid-area: attribution;
