@@ -18,6 +18,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
+ ![image](https://user-images.githubusercontent.com/5782554/227089414-3444cb1f-c88c-41ae-b3c6-74a4daf31adf.png)
+
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://qrcodecapb.netlify.app/)
